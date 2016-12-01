@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+    
+        <style type="text/css">
+            /* Mobile-specific Styles */
+            @media only screen and (max-width: 480px) {
+            table[class=w15], td[class=w15], img[class=w15] { width:15px !important; }
+            table[class=w230], td[class=w230], img[class=w230] { width:230px !important; }
+            table[class=w270], td[class=w270], img[class=w270] { width:270px !important; }
+            table[class=w300], td[class=w300], img[class=w300] { width:300px !important; }
+            table[class=h0], td[class=h0], img[class=h0] { height: 0 !important; }
+            table[class=h4], td[class=h4], img[class=h4] { height:4px !important; }
+            table[class=h10], td[class=h10], img[class=h10] { height:10px !important; }
+            table[class=h20], td[class=h20], img[class=h20] { height:20px !important; }
+            table[class=h30], td[class=h30], img[class=h30] { height:30px !important; }
+            .right {display:block; margin-bottom:10px!important; text-align: right;}
+            img[class=left-sml], img[class=right-sml] {float:none!important;display:block!important;margin: 0 auto;  text-align: center!important; width: 150px!important;  margin-bottom:10px!important;}
+            img[class=left], img[class=right] {float:none!important;display:block!important; margin: 0 auto; text-align: center!important; width: 270px!important;  margin-bottom:10px!important;}
+            img[class=logos-left], img[class=logos-right] {float:none!important;display:block!important;margin: 0 auto;  text-align: center!important;width: 270px !important; height: auto !important}
+            img[class=logos-right] {margin-top: 10px;}
+            img[class=img-center] {margin: auto;}
+            td[class=abn] {text-align:left!important}
+            td[class=superlogos] {text-align:center;}
+            td[class=sitelinks] {text-align:left;}
+            table[class*=hide], td[class*=hide], img[class*=hide], p[class*=hide], span[class*=hide] { display:none !important; }
+            img { height: auto; line-height: 100%;}
+            h1 {color:#383467;font-family: Arial, Helvetica, Sans-serif;font-size: 16px !important;}
+            li {margin-bottom:1em;}
+            .sub-title {font-weight:bold;font-family: Arial, Helvetica, Sans-serif;font-size:14px;color:#606060;line-height:26px;}
+            a.footer-link {display:block !important; font-size: 18px; line-height: 18px !important;}
+            .privacy {font-size: 12px !important; line-height: 18px !important;}
+            }
+            /* Client-specific Styles */
+            #outlook a { padding: 0; }  /* Force Outlook to provide a "view in browser" button. */
+            body { width: 100% !important; }
+            .ReadMsgBody { width: 100%; }
+            .ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
+            /* Reset Styles */
+            /* Add 100px so mobile switch bar doesn't cover street address. */
+            body { background-color: #f1f1f1; margin: 0; padding: 0; }
+            img { outline: none; text-decoration: none; display: block;}
+            br, strong br, b br, em br, i br { line-height:100%; }
+            h1, h2, h3, h4, h5, h6 { line-height: 1.3em !important; -webkit-font-smoothing: antialiased; }
+            h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: blue !important; }
+            h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active { color: red !important; }
+            /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+            h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: purple !important; }
+            /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+            table td, table tr { border-collapse: collapse; }
+            .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+            color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;
+            }   /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+            /* This most probably won't work in all email clients. Don't include code blocks in email. */
+            code {
+            white-space: normal;
+            word-break: break-all;
+            }
+            .nobr {white-space: nowrap;}
+            #background-table { background-color: #efe9e5; }
+            /* Fonts and Content */
+            body, td { font-family: Arial, Helvetica, sans-serif; }
+            .title {color:#383467;font-family: Arial, Helvetica, Sans-serif;font-size: 18px;}
+            .sub-title {font-weight:bold;font-family: Arial, Helvetica, Sans-serif;font-size:14px;color:#606060;line-height:20px; margin-top:1.2em; margin-bottom:1.3em;}
+            .pullout-title {font-family: Arial, Helvetica, sans-serif;color:#383467;font-size:16px;}
+            .logos-left {height: 58px;}
+            .logos-right {height: 58px;}
+            a {color:#3e3a73;text-decoration: underline;}
+            p {line-height:20px;color:#606060;}
+            h2 {margin: 0px;}
+            ul {margin-bottom: 20px;}
+            .sitelinks a, a.footer-link {font-size: 14px;}
+        </style>
+    </head>
+    <body bgcolor="#f1f1f1">
+        <!-- Email Body -->
+        <table style="table-layout:fixed;" align="center" bgcolor="#f1f1f1" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="#f1f1f1">
+                    <!--View online header-->
+                    <table class="w300" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td class="w300" align="right" height="44" valign="middle" width="600">
+                                <a href="[!OnlineVersion()!]"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: rgb(62, 58, 115);">View online version</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END view online header -->
+                    <table class="w300" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <!-- Logos -->
+                            <tr>
+                                <td class="w300" width="600">
+                                <img class="w300" src="http://www.gesb.com.au/images/edm_logo_GESB.jpg" style="display:block;" alt="GESB logo" title="GESB Superannuation" align="left" width="321" height="111">
+                                </td>
+                            </tr>
+                            <!-- END Logos -->
+                            <!-- Section divider colours -->
+                            <!-- purple -->
+                            <tr>
+                                <td class="h4" style="background-color: #363b74;" height="8"></td>
+                            </tr>
+                            <!-- END purple -->
+                            <!-- teal -->
+                            <!-- <tr>
+                                <td class="h4" height="8" style="background-color: #00769a;"></td>
+                            </tr> -->
+                            <!-- END teal -->
+                            <!-- green -->
+                            <!-- <tr>
+                                <td class="h4" height="8" style="background-color: #cacd36;"></td>
+                            </tr> -->
+                            <!-- END green -->
+                            <!--  pink -->
+                            <!-- <tr>
+                                <td class="h4" height="8" style="background-color: #a5327f;"></td>
+                            </tr> -->
+                            <!-- END pink -->
+                            <!-- END Section divider colours -->
+                            <!-- Banner Image -->
+                            <tr>
+                                <td class="w300" width="600">
+                                <img class="w300" src="http://www.gesb.com.au/images/header_comfortzone_2015.jpg" style="display:block;" alt="Into your comfort zone" title="Into your comfort zone" width="600">
+                                </td>
+                            </tr>
+                            <!-- END Banner image -->
+                            <!-- Spacer Row -->
+                            <tr>
+                                <td class="w300" height="20" width="600">&nbsp;</td>
+                            </tr>
+                            <!--END Spacer Row -->
+                            <!--Main Copy -->
+                    <tr>
+                        <td align="left" class="w300" style="font-family: Arial, Helvetica, Sans-serif; color:#606060; font-size:14px;" width="600"><!-- Main copy section -->
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="w300" width="600">
+                            <tbody>
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td class="w270" style="color:#606060; font-family: Arial, Helvetica, sans-serif;" width="560">
+                                    <p style="font-size:14px;line-height:20px;">Dear [!first_name!],</p>
+
+                                    <p style="font-size:14px;line-height:20px;">Thanks for participating in our recent 'Into your comfort zone' programme; we hope you found it valuable.</p>
+
+                                    <p style="font-size:14px;line-height:20px;">Below are some useful links for further information on super and retirement:</p>
+
+                                    <ul>
+                                        
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Department of Education 'On the road to retirement' flyer" href="http://www.gesb.com.au/cps/rde/xchg/internet/site/gesb_media/doe_iycz_road_to_retirement_flyer.pdf" target="_blank">Department of Education 'On the road to retirement' flyer</a></li>
+
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Department of Education 'Teach remote and change lives' flyer" href="http://www.gesb.com.au/cps/rde/xchg/internet/site/gesb_media/doe_iycz_remote_teaching_flyer.pdf" target="_blank">Department of Education 'Teach remote and change lives' flyer</a></li>
+
+                                    </ul>
+
+                                    <h2 class="sub-title" style="color:#606060; font-family: Arial, Helvetica, Sans-serif; font-size:14px; line-height:20px;">Information on GESB</h2>
+
+                                    <ul>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="GESB Website" href="http://www.gesb.com.au/" target="_blank">GESB website</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Investment Centre" href="http://www.gesb.com.au/cps/rde/xchg/internet/site/5930.html" target="_blank">GESB investment centre</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="GESB Super Pib" href="http://www.gesb.com.au/gesb_media/gesb_super_pib.pdf" target="_blank">GESB Super Product Information Booklet</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="WSS Pib" href="http://www.gesb.com.au/gesb_media/wss_pib.pdf" target="_blank">West State Super Product Information Booklet</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="GSS Essentials" href="http://www.gesb.com.au/gesb_media/gss_essentials.pdf" target="_blank">Gold State Super essentials brochure</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Pre83 Untaxed Super" href="http://www.gesb.com.au/gesb_media/pre83_fact_sheet.pdf" target="_blank">Pre-1 July 1983 service for untaxed super funds</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Tax brochure" href="http://www.gesb.com.au/gesb_media/tax_fact_sheet.pdf" target="_blank">Tax and super brochure</a></li>
+                                    </ul>
+
+                                    <h2 class="sub-title" style="color:#606060; font-weight: bold; font-family: Arial, Helvetica, Sans-serif; font-size:14px; line-height:20px;">External websites</h2>
+
+                                    <ul>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Superannuation website" href="http://www.superannuation.asn.au/" target="_blank">Association of Superannuation Funds of Australia website</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Superannuation Retirement Standard" href="http://www.superannuation.asn.au/resources/retirement-standard/" target="_blank">Association of Superannuation Funds of Australia retirement standard</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="MoneySmart" href="https://www.moneysmart.gov.au/" target="_blank">MoneySmart website</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Wills" href="http://www.publictrustee.wa.gov.au/W/wills.aspx?uid=1915-0728-4235-5275" target="_blank">Public Trustee - Wills</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Enduring power of attorney" href="http://www.publicadvocate.wa.gov.au/E/enduring_power_of_attorney.aspx" target="_blank">Office of the Public Advocate - Enduring Power of Attorney</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Enduring  power guardianship" href="http://www.publicadvocate.wa.gov.au/E/enduring_power_of_guardianship.aspx" target="_blank">Office of the Public Advocate - Enduring Power of Guardianship</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="Humanservices" href="http://www.humanservices.gov.au/" target="_blank">Department of Human Services</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="FPA" href="http://fpa.asn.au/" target="_blank">Financial Planning Association of Australia</a></li>
+                                        <li style="font-size:14px;line-height:20px;"><a data-track-link="true" data-track-name="CPA Australia" href="http://www.cpaaustralia.com.au/" target="_blank">CPA Australia</a></li>
+                                    </ul>
+                                    </td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- END Main copy section --><!--Signature -->
+
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="w300" width="600">
+                            <tbody>
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td align="left" class="w270" style="color:#606060; font-family: Arial, Helvetica, sans-serif;font-size:14px;" width="560">
+                                    <p style="font-size:14px;line-height:20px;">If you have any questions about your seminar participation, or your GESB account, contact your Member Services Centre on <span class="nobr"><strong>13 43 72</strong></span>.</p>
+
+                                    <p style="font-size:14px;line-height:20px;">Kind regards,</p>
+                                    </td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td align="left" class="w270" height="60" style="color:#606060; font-family: Arial, Helvetica, sans-serif;font-size:14px;" valign="middle" width="560"><img alt="Signature Brad Zaknich" height="45" src="http://www.gesb.com.au/images/signature_brad_zaknich.gif" style="display:block;" width="193" /></td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td align="left" class="w270" style="color:#606060; font-family: Arial, Helvetica, sans-serif;font-size:14px;" width="560">
+                                    <p style="font-size:14px;line-height:20px;padding:0;margin:0"><strong>Brad Zaknich</strong><br />
+                                    <em>Key Account Manager </em></p>
+                                    </td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="40">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row --><!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="40">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row -->
+                            </tbody>
+                        </table>
+                        <!-- END Signature --><!-- Super Logos Version 1-->
+
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="w300" width="600">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" height="4">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td class="w270" width="560">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w270" width="560">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left"><a class="footer-link" data-track-link="true" data-track-name="GESB website" href="http://www.gesb.com.au" style="font-size:14px; display:inline-block;" target="_blank">gesb.com.au</a> &nbsp; &nbsp; <a class="footer-link" data-track-link="true" data-track-name="Privacy" href="http://www.gesb.com.au/index_privacy.html" style="font-size:14px; display:inline-block;" target="_blank">Privacy</a> &nbsp; &nbsp; <a class="footer-link" data-track-link="true" data-track-name="Dicslaimer" href="http://www.gesb.com.au/index_480.html" style="font-size:14px; display:inline-block;" target="_blank">Disclaimer</a> &nbsp; &nbsp; <a class="footer-link" data-track-link="true" data-track-name="Unsubscribe" href="http://www.gesb.com.au/aspx/MOL/index_seminar_unsubscribe.aspx?ci=[!compass_id!]" style="font-size:14px; display:inline-block;" target="_blank">Unsubscribe</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row -->
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td align="left" height="50" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:24px; color:#606060;" valign="middle">Government Employees Superannuation Board ABN 43 418 292 917</td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="20">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row -->
+                            </tbody>
+                        </table>
+                        <!-- END Super Logos Version 1 --><!-- Privacy-->
+
+                        <table bgcolor="#f9f8f8" border="0" cellpadding="0" cellspacing="0" class="w300" width="600">
+                            <tbody><!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="10">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row -->
+                                <tr>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                    <td class="w270" width="560">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w270" width="560">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" width="45"><img align="left" alt="Lock" src="http://www.gesb.com.au/images/edm_lock-v2.gif" style="margin-top: 10px;" /></td>
+                                                <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#606060;">
+                                                <p class="privacy" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height: 14px; color:#606060;">GESB takes the protection of your super and personal information seriously. Before accessing emails or the Internet, always ensure your anti-virus protection is up to date. Emails from GESB will only ever contain a link directly to Member Online when you have requested a change, for example a change of password or a change of email address. If you believe that your personal information has been compromised, you should contact your Member Services Centre immediately.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                    <td class="w15" width="20">&nbsp;</td>
+                                </tr>
+                                <!-- Spacer Row -->
+                                <tr>
+                                    <td colspan="3" height="20">&nbsp;</td>
+                                </tr>
+                                <!--END Spacer Row -->
+                            </tbody>
+                        </table>
+                        <!-- END Privacy--></td>
+                    </tr>
+                    <!-- Spacer Row -->
+                    <tr>
+                        <td bgcolor="#f1f1f1" height="30">&nbsp;</td>
+                    </tr>
+                    <!--END Spacer Row -->
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
