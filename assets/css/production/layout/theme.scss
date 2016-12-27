@@ -1,1 +1,128 @@
 @import '../bootstrap/bootstrap.scss';
+
+/* assets */
+
+/* btn */
+.btn-border-radius-lg {
+  border-radius: 3em;
+}
+
+/* header */
+.header {
+  padding-top: 2.5em;
+}
+.brand p {
+  float: right;
+}
+.nav-link {
+  color: #b9b9b9;
+  display: inline-block !important;
+  position: relative;
+  padding: 0.5em 0em !important;
+  margin: 0em 1em;
+}
+
+.nav-link.active:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: #b9b9b9;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: $gray !important;
+}
+
+/* hero */
+.jumbotron {
+  background-color: #fff !important;
+  text-align: center;
+}
+.hello {
+  font-size: 2.5em;
+  display: inline;
+  padding-bottom: 3em;
+}
+.typed-cursor{
+    font-size: 2.5em;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/* cards */
+.cards {
+  margin-top:4em;
+  padding-top:4em;
+  padding-bottom: 4.5em;
+  background-color: #F6F6F6;
+}
+
+.grid {
+  /* margin-left: 1.2em; */
+  left:2.5em;
+}
+
+.grid-item {
+  /* width: 26em; */
+  background-color: #fff;
+  box-shadow: 0 3em 3.5em rgba(0,0,0,.09);
+  padding: 6em 3em 6em 3em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  margin-right: 1.2em;
+  margin-left: 1.2em;
+}
+
+/* content */
+.content-header {
+  padding-left: .8em !important;
+  padding-bottom: 0 !important;
+  padding-top: 8em !important;
+  border-bottom:.1em solid #F6F6F6;
+}
+
+.content {
+  padding-bottom: 4.5em;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+  margin-bottom: .8em;
+}
+
+.grid-title {
+  text-align: left;
+}
+.grid-meta {
+  text-align:left;
+  margin-bottom: 2em;
+}
+.grid-excerpt {
+  margin-bottom: 2.5em;
+}
+
+/* footer */
+.footer {
+  padding-top:4em;
+  padding-bottom: 1em;
+  border-top:.1em solid #F6F6F6;
+}

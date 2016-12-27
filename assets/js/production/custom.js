@@ -5,20 +5,21 @@
 //Making the plugins run
 $(document).ready(function() {
 
-      $('.header-search' ).click(function() {
-        $('.header-search-expand').slideToggle();
-      });
+  $('.grid').masonry({
+    // options...
+    itemSelector: '.grid-item'
+  });
 
-      //gallery test
-      $('.fancybox').fancybox();
-      $('.backstretch').css('opacity','0.2');
-
-  		//adding styling to tags in the blog page
-  		$('.tagcloud a').addClass('label label-primary sidebar-labels');
-  		$('.tagcloud a').css('font-size','12px');
-
-      $('#cat').addClass('form-control');
-
+  //typed effect
+  $(".hello").typed({
+    strings: [
+      "Hi there..",
+      "My name is Eri",
+      "I help businesses with web and graphic design"
+    ],
+    typeSpeed: 30,
+    contentType: 'html'
+  });
 
 });
 

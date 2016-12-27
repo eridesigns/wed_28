@@ -53,7 +53,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #ffed00 !default;
+$brand-primary:             #0A9FFF !default;
 $brand-success:             $gray-dark !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -120,7 +120,7 @@ $body-color: $gray-dark !default;
 $link-color:            $brand-primary !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 30%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 // Grid breakpoints
@@ -196,14 +196,14 @@ $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 
-$display1-weight: 300 !default;
-$display2-weight: 300 !default;
-$display3-weight: 300 !default;
+$display1-weight: 700 !default;
+$display2-weight: 600 !default;
+$display3-weight: 500 !default;
 $display4-weight: 300 !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   'Open Sans' !default;
-$headings-font-weight:   500 !default;
+$headings-font-weight:   800 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
