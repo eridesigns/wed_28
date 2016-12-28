@@ -10,10 +10,9 @@
 /* header */
 .header {
   padding-top: 2.5em;
+  border-top: 3px solid #0C78F8;
 }
-.brand p {
-  float: right;
-}
+
 .nav-link {
   color: #b9b9b9;
   display: inline-block !important;
@@ -69,33 +68,15 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-/* cards */
-.cards {
-  margin-top:8em;
-  padding-top:4em;
-  padding-bottom: 4.5em;
-  background-color: #F6F6F6;
+
+/* floating side */
+.floating-side {
+  position: fixed;
+  width: 300px;
+  text-align: center;
+  margin-top: 4em;
 }
 
-.grid {
-  /* margin-left: 1.2em; */
-  left:2.5em;
-}
-
-.grid-item {
-  /* width: 26em; */
-  background-color: #fff;
-  box-shadow: 0 3em 3.5em rgba(0,0,0,.09);
-  padding: 6em 3em 6em 3em;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-  margin-right: 1.2em;
-  margin-left: 1.2em;
-}
-
-.grid-item:first-child {
-  margin-top: -14em;
-}
 
 /* content */
 .content-header {
@@ -122,6 +103,42 @@
 }
 .grid-excerpt {
   margin-bottom: 2.5em;
+}
+
+/* posts */
+.post {
+  margin-top: 4em;
+  position: relative;
+  z-index: 0;
+  padding: 0px 3em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.post-title a {
+  color: $gray !important;
+}
+.post-image {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.post-image img {
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  max-width: 500px;
+  border-bottom: none;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.post-excerpt {
+
+}
+.post-footer {
+
 }
 
 /* footer */
