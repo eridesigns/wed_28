@@ -10,7 +10,11 @@
 /* header */
 .header {
   padding-top: 2.5em;
-  border-top: 3px solid #0C78F8;
+  border-top: .3em solid $brand-primary;
+}
+
+.hero {
+  background-color: $brand-primary;
 }
 
 .nav-link {
@@ -77,6 +81,20 @@
   margin-top: 4em;
 }
 
+.floating-side img {
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.logo {
+  font-size: 4em;
+  color: $brand-primary;
+}
+
+.menu-panel {
+  display: none;
+}
+
 
 /* content */
 .content-header {
@@ -110,7 +128,7 @@
   margin-top: 4em;
   position: relative;
   z-index: 0;
-  padding: 0px 3em;
+  padding: 2em 1em;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -138,12 +156,17 @@
 
 }
 .post-footer {
-
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* footer */
 .footer {
-  padding-top:4em;
+  padding-top:1em;
   padding-bottom: 1em;
   border-top:.1em solid #F6F6F6;
+}
+
+.navbar-brand {
+  padding-left: 4em;
 }
