@@ -11,6 +11,7 @@ $(document).ready(function() {
   });
 
   //typed effect
+  /*
   $(".hello").typed({
     strings: [
       "Hi there..",
@@ -19,7 +20,7 @@ $(document).ready(function() {
     ],
     typeSpeed: 30,
     contentType: 'html'
-  });
+  }); */
 
   //menu panel
   $('.menu-panel-slide').click(function(){

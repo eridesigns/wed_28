@@ -9,7 +9,6 @@
 
 /* header */
 .header {
-  padding-top: 2.5em;
   border-top: .3em solid $brand-primary;
 }
 
@@ -42,13 +41,13 @@
 
 /* hero */
 .jumbotron {
-  background-color: #fff !important;
+  background-color: $brand-primary !important;
   text-align: center;
 }
 .hello {
-  font-size: 2.5em;
+  font-size: 4em;
   display: inline;
-  padding-bottom: 3em;
+  color: #fff;
 }
 .typed-cursor{
     font-size: 2.5em;
@@ -93,6 +92,7 @@
 
 .menu-panel {
   display: none;
+  background-color: $brand-primary;
 }
 
 
